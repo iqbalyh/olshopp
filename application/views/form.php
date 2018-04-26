@@ -38,16 +38,22 @@
 
     <form action="<?php base_url()?>index.php/user/add_input" method="post">
       <div class="form-group has-feedback">
-        <input type="text" class="form-control" placeholder="Full name" name="fullname">
+        <input type="text" class="form-control" placeholder="Full name" name="fullname" required>
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="text" class="form-control" placeholder="Username" name="username">
+        <input type="text" class="form-control" placeholder="Username" name="username" required>
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Password" name="password">
+        <input type="password" class="form-control" placeholder="Password" name="password" required>
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+      </div>
+      <div class="form-group has-feedback">
+        <select name="level" class="form-control" required>
+          <option value="Admin">Admin</option>
+          <option value="User">User</option>
+        </select>
       </div>
       <div class="row">
         <div class="col-xs-8">
