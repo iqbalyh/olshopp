@@ -33,6 +33,20 @@ class User extends CI_Controller
 		$this->load->view("welcome_message");
 	}
 
+	function table(){
+		$this->load->model('Data_user');
+		$dt['tbuser'] = $this->Data_user->gets();
+
+		$this->load->view('tables', $dt);
+	}
+	function del($id){
+		$this->Data_user->del($id);
+
+		redirect('user/table');
+	}
+	function edit($id){}
+	function detail($id){}
+
 } 
 
 
