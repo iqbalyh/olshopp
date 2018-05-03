@@ -11,6 +11,10 @@ class User extends CI_Controller
 		$this->load->helper("url");
 		$this->load->model("Data_user");
 	}
+	public function index()
+	{
+		$this->load->view("welcome_message");
+	}
 
 	public function form()
 	{

@@ -423,6 +423,7 @@
           <ul class="treeview-menu">
             <li><a href="<?php echo base_url()?>assets/adminlte/pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
             <li><a href="<?php echo base_url()?>assets/adminlte/pages/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
+            <li><a href="<?php echo base_url('index.php/user/table')?>"><i class="fa fa-circle-o"></i>Table</a><br></li>
           </ul>
         </li>
         <li>
